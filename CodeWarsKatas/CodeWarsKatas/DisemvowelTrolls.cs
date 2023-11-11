@@ -10,13 +10,13 @@ namespace CodeWarsKatas
     {
         public string Disemvowel(string str)
         {
-            List<char> vowelBank = new List<char> { 'a', 'e', 'i', 'o', 'u' };
+            List<string> vowelBank = new List<string> { "a", "e", "i", "o", "u" };
 
             string result = "";
 
             foreach(char letter in str)
             {
-                if (!vowelBank.Contains(letter))
+                if (!vowelBank.Contains(letter.ToString().ToLower()))
                 {
                     result += letter;
                 }
