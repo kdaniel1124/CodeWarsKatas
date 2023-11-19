@@ -55,5 +55,20 @@ namespace CodeWarsTests
             Assert.AreEqual(expected, result, "If input string is empty then there are no duplicates and method should return 0.");
         }
        
+        [TestMethod]
+        public void CountingDuplicates_CountDuplicates_CaseInsensitive()
+        {
+            //Arrange
+            CountingDuplicates Test4 = new CountingDuplicates();
+            string input = "top TOP";
+            int expected = 3;
+
+            //Act
+            int result = Test4.DuplicateCount(input);
+
+            //Assert
+            Assert.AreEqual(expected, result, "Characters counting as duplicates should be case insensitive.");
+        }
+       
     }
 }

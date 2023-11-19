@@ -15,13 +15,13 @@ namespace CodeWarsKatas
 
             foreach(char thing in str)
             {
-                if (dupeBook.ContainsKey(thing.ToString()))
+                if (dupeBook.ContainsKey(thing.ToString().ToUpper()))
                 {
-                    dupeBook[thing.ToString()] ++;
+                    dupeBook[thing.ToString().ToUpper()] ++;
                 }
                 else
                 {
-                    dupeBook[thing.ToString()] = 1;
+                    dupeBook[thing.ToString().ToUpper()] = 1;
                 }
             }
 
