@@ -25,6 +25,7 @@ namespace CodeWarsTests
             Assert.AreEqual(expected, result, "Method should return whichever number occurs the most times, not the amount of times it occurs");
         }
 
+        [TestMethod]
         public void HighestRankNumber_HighestRank_TieBreaker()
         {
             //Arrange
@@ -36,21 +37,22 @@ namespace CodeWarsTests
             int result = Test2.HighestRank(input);
 
             //Assert
-            Assert.AreEqual(expected, result, "");
+            Assert.AreEqual(expected, result, "If two numbers occur the same amount of times, then the larger number should be returned");
         }
 
+        [TestMethod]
         public void HighestRankNumber_HighestRank_NegativeArray()
         {
             //Arrange
             HighestRankNumber Test3 = new HighestRankNumber();
-            int[] input = { };
-            int expected = 0;
+            int[] input = { -1, -10, -15, -1, -10, -7 };
+            int expected = -1;
 
             //Act
             int result = Test3.HighestRank(input);
 
             //Assert
-            Assert.AreEqual(expected, result, "Method should return whichever number occurs the most times, not the amount of times it occurs");
+            Assert.AreEqual(expected, result, "Method should return whichever number occurs the most times, in the event of a tie the larger number should be returned");
         }
 
     }
