@@ -55,5 +55,35 @@ namespace CodeWarsTests
             Assert.AreEqual(expected, result, "Method should return whichever number occurs the most times, in the event of a tie the larger number should be returned");
         }
 
+        [TestMethod]
+        public void HighestRankNumber_HighestRank_LargestAtStart()
+        {
+            //Arrange
+            HighestRankNumber Test4 = new HighestRankNumber();
+            int[] input = { 1000, 1, 1, 2 };
+            int expected = 1;
+
+            //Act
+            int result = Test4.HighestRank(input);
+
+            //Assert
+            Assert.AreEqual(expected, result, "Method should return whichever number occurs the most times, in the event of a tie the larger number should be returned");
+        }
+
+        [TestMethod]
+        public void HighestRankNumber_HighestRank_AllSame()
+        {
+            //Arrange
+            HighestRankNumber Test5 = new HighestRankNumber();
+            int[] input = { 9, 9, 9, 9, 9, 9 };
+            int expected = 9;
+
+            //Act
+            int result = Test5.HighestRank(input);
+
+            //Assert
+            Assert.AreEqual(expected, result, "Method should return whichever number occurs the most times, in the event of a tie the larger number should be returned");
+        }
+
     }
 }

@@ -12,9 +12,11 @@ namespace CodeWarsKatas
         {
             Dictionary<int, int> numCounts = new Dictionary<int, int>();
 
-            List<int> highestCounts = new List<int>();
+            //List<int> highestCounts = new List<int>();
 
             int highestCount = 0;
+
+            int currentWinner = arr[0];
 
             // We fill our dictionary by tallying how many times each number occurr in our array
             // At the end of each iteration we also check to see which number has the highest count of occurances
@@ -32,18 +34,23 @@ namespace CodeWarsKatas
                 if (numCounts[num] > highestCount)
                 {
                     highestCount = numCounts[num];
+                    currentWinner = num;
+                }
+                else if (numCounts[num] == highestCount && num > currentWinner)
+                {
+                    currentWinner = num;
                 }
             }
 
-            foreach (KeyValuePair<int, int> kvp in numCounts)
+            /*foreach (KeyValuePair<int, int> kvp in numCounts)
             {
                 if (kvp.Value == highestCount)
                 {
                     highestCounts.Add(kvp.Key);
                 }
-            }
+            }*/
 
-            return (highestCounts.Max());
+            return (currentWinner);
         }
     }
 }
