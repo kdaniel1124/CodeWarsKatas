@@ -12,8 +12,6 @@ namespace CodeWarsKatas
         {
             Dictionary<int, int> numCounts = new Dictionary<int, int>();
 
-            //List<int> highestCounts = new List<int>();
-
             int highestCount = 0;
 
             int currentWinner = arr[0];
@@ -41,14 +39,6 @@ namespace CodeWarsKatas
                     currentWinner = num;
                 }
             }
-
-            /*foreach (KeyValuePair<int, int> kvp in numCounts)
-            {
-                if (kvp.Value == highestCount)
-                {
-                    highestCounts.Add(kvp.Key);
-                }
-            }*/
 
             return (currentWinner);
         }
