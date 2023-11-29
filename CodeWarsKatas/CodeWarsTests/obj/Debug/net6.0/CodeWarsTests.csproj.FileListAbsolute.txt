@@ -208,3 +208,4 @@ C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsTests\obj\Debug\
 C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsTests\obj\Debug\net6.0\CodeWarsTests.pdb
 C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsTests\obj\Debug\net6.0\CodeWarsTests.genruntimeconfig.cache
 C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsTests\obj\Debug\net6.0\ref\CodeWarsTests.dll
+C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsTests\obj\Debug\net6.0\CodeWarsTests.sourcelink.json

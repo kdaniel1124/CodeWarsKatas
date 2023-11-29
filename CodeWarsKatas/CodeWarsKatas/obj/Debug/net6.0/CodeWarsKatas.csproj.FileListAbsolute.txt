@@ -26,3 +26,4 @@ C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsKatas\obj\Debug\
 C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsKatas\obj\Debug\net6.0\CodeWarsKatas.pdb
 C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsKatas\obj\Debug\net6.0\CodeWarsKatas.genruntimeconfig.cache
 C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsKatas\obj\Debug\net6.0\ref\CodeWarsKatas.dll
+C:\Users\Danny\CodeProjects\CodeWarsKatas\CodeWarsKatas\CodeWarsKatas\obj\Debug\net6.0\CodeWarsKatas.sourcelink.json
