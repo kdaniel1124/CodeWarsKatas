@@ -8,6 +8,7 @@ namespace CodeWarsKatas
 {
     public class TwiceAsOldSolution
     {
+        // https://www.codewars.com/kata/5b853229cfde412a470000d0/train/csharp
         public int TwiceAsOld(int dadYears, int sonYears)
         {
             int dadAge = dadYears - sonYears;
