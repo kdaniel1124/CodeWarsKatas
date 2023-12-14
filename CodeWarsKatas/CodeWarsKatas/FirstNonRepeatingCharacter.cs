@@ -14,11 +14,11 @@ namespace CodeWarsKatas
 
             for (int i = 0; i < lowerString.Length; i++)
             {
-                char currentLetter = str[i];
+                char currentLetter = lowerString[i];
 
-                if (str.IndexOf(currentLetter) == str.LastIndexOf(currentLetter))
+                if (lowerString.IndexOf(currentLetter) == lowerString.LastIndexOf(currentLetter))
                 {
-                    return currentLetter.ToString();
+                    return str[i].ToString();
                 }
             }
 
