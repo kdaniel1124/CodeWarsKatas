@@ -12,17 +12,21 @@ namespace CodeWarsKatas
         {
             int result = 0;
 
-            for (int i = 0; i < value; i++)
+            if (value > 0)
             {
-                if (i % 3 == 0)
+                for (int i = 0; i < value; i++)
                 {
-                    result += i;
-                }
-                else if (i % 5 == 0)
-                {
-                    result += i;
+                    if (i % 3 == 0)
+                    {
+                        result += i;
+                    }
+                    else if (i % 5 == 0)
+                    {
+                        result += i;
+                    }
                 }
             }
+
             return result;
         }
     }
