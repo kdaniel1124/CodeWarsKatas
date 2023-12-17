@@ -53,8 +53,8 @@ namespace CodeWarsKatas
                 }
             }
 
-            // We now to an indexed loop through our lower string, referring to each char as the key in our dictionary
-            // If that key has a value of one. Then we return that letter, not from our lower string, but from the original input string
+            // We now do an indexed loop through our lower string, referring to each char as the key in our dictionary
+            // If that key has a value of one then we return that letter, not from our lower string, but from the original input string
             for (int i = 0; i < lowerStr.Length; i++)
             {
                 if (counts[lowerStr[i]] == 1)
