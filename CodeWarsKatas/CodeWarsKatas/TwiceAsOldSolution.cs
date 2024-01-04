@@ -26,7 +26,14 @@ namespace CodeWarsKatas
                     dadAge++;
                 }
             }
-            return sonAge;
+            if( dadAge > dadYears)
+            {
+                return (dadAge - dadYears);
+            }
+            else
+            {
+                return (dadYears - dadAge);
+            }
         }
     }
 }
