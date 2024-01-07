@@ -11,7 +11,7 @@ namespace CodeWarsTests
     public class WhatIsBetweenTests
     {
         [TestMethod]
-        public void MyTestMethod()
+        public void WhatIsBetween_Between_FourCount()
         {
             //Arrange
             WhatIsBetween Test1 = new WhatIsBetween();
