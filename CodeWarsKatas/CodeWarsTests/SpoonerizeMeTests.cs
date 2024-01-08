@@ -40,5 +40,19 @@ namespace CodeWarsTests
             Assert.AreEqual(expected, result);
         }
 
+        [TestMethod]
+        public void SpoonerizeMe_Spoonerize_EmptyString()
+        {
+            //Arrange
+            SpoonerizeMe Test3 = new SpoonerizeMe();
+            string input = "";
+            string expected = "";
+
+            //Act
+            string result = Test3.Spoonerize(input);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+        }
     }
 }

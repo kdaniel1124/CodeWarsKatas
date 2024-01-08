@@ -10,21 +10,29 @@ namespace CodeWarsKatas
     {
         public string Spoonerize(string str)
         {
-            char first = str[0];
-            string result = "";
-
-            for (int i = 1; i < str.Length; i++)
+            if (str.Length < 2)
             {
-                if (str[i - 1] == ' ')
-                {
-                    result = str[i] + result + first;
-                }
-                else
-                {
-                    result += str[i];
-                }
+                return str;
             }
-            return result;
+            else
+            {
+
+                char first = str[0];
+                string result = "";
+
+                for (int i = 1; i < str.Length; i++)
+                {
+                    if (str[i - 1] == ' ')
+                    {
+                        result = str[i] + result + first;
+                    }
+                    else
+                    {
+                        result += str[i];
+                    }
+                }
+                return result;
+            }
         }
     }
 }
