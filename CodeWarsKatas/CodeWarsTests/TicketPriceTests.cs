@@ -41,7 +41,7 @@ namespace CodeWarsTests
         }
 
         [TestMethod]
-        public void TicketPrice_GetPrice_LessThanFivePeopleIsWeekendSomeAdults()
+        public void TicketPrice_GetPrice_LessThanFivePeopleIsWeekendWithAdults()
         {
             //Arrange
             TicketPrice Test3 = new TicketPrice();
