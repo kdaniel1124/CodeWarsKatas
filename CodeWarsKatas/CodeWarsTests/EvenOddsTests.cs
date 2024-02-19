@@ -55,5 +55,20 @@ namespace CodeWarsTests
             Assert.AreEqual(expected, result, "If number is even method should return 'Even'");
         }
 
+        [TestMethod]
+        public void EvenOdds_EvenOrOdd_Zero()
+        {
+            //Arrange
+            EvenOdds Test4 = new EvenOdds();
+            int input = 0;
+            string expected = "Even";
+
+            //Act
+            string result = Test4.EvenOrOdd(input);
+
+            //Assert
+            Assert.AreEqual(expected, result, "If number is zero then for the purposes of the method it should should return 'Even'");
+        }
+
     }
 }
