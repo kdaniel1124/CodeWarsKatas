@@ -31,7 +31,7 @@ namespace CodeWarsTests
             //Arrange
             FindTheOddInt Test2 = new FindTheOddInt();
             int[] input = { 15, 30, 45, 60, 60, 45, 30, 15 };
-            int expected = 15;
+            int expected = 0;
 
             //Act
             int result = Test2.FindOdd(input);
